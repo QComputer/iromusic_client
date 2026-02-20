@@ -1,0 +1,1219 @@
+# iromusic_client
+
+<p align="center">
+  <a href="https://pypi.org/project/iromusic_client/">
+    <img src="https://img.shields.io/pypi/v/iromusic_client.svg" alt="PyPI Version">
+  </a>
+  <a href="https://pypi.org/project/iromusic_client/">
+    <img src="https://img.shields.io/pypi/pyversions/iromusic_client.svg" alt="Python Versions">
+  </a>
+  <a href="https://github.com/example/iromusic_client/blob/main/LICENSE">
+    <img src="https://img.shields.io/pypi/l/iromusic_client.svg" alt="License">
+  </a>
+  <a href="https://github.com/example/iromusic_client/actions">
+    <img src="https://github.com/example/iromusic_client/workflows/Test/badge.svg" alt="Build Status">
+  </a>
+</p>
+
+## Overview
+
+**iromusic_client** is a comprehensive Python client library designed for fetching and processing data from the iromusicapp.ir API. This production-ready library provides a robust interface for accessing movie, series, and music content data with advanced features including automatic pagination, response caching, data validation, and organized file output.
+
+### Purpose
+
+The library was created to simplify interaction with the iromusicapp.ir API endpoints, providing developers with a reliable tool for:
+
+- Fetching movie and series posts with type filtering
+- Retrieving music content (albums and singles)
+- Handling pagination automatically for large datasets
+- Processing and validating JSON responses
+- Saving data with organized timestamp-based filenames
+
+### Target Audience
+
+This library is ideal for:
+
+- **Developers** building applications that integrate with iromusicapp.ir
+- **Data Engineers** collecting content data for analysis
+- **Researchers** gathering entertainment content metadata
+- **Content Curators** managing movie and music databases
+
+### Key Features
+
+- **Robust HTTP Client**: Configurable timeouts, custom headers, exponential backoff retry logic
+- **Automatic Pagination**: Fetch complete datasets across multiple pages seamlessly
+- **Response Caching**: Built-in cache for graceful degradation when APIs are unavailable
+- **Data Validation**: Comprehensive JSON validation with customizable field requirements
+- **Type Safety**: Full type annotations for IDE support and static analysis
+- **CLI Interface**: Command-line tool for quick data fetching
+- **Structured Output**: Timestamped files organized in dated directory structures
+- **Error Handling**: Specific exception types for different failure scenarios
+
+---
+
+## Installation
+
+### Prerequisites
+
+Before installing iromusic_client, ensure you have:
+
+- **Python 3.8 or higher**: Check your Python version with `python --version`
+- **pip** (recommended) or **poetry** for package management
+
+### Using pip
+
+The simplest way to install iromusic_client is using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+For a specific version:
+
+```bash
+pip install iromusic_client==1.0.0
+```
+
+### Using Poetry
+
+If you prefer Poetry for dependency management:
+
+```bash
+poetry install
+```
+
+### Development Installation
+
+For development and testing:
+
+```bash
+pip install -e ".[dev]"
+```
+
+### Verifying Installation
+
+Verify the installation was successful:
+
+```bash
+python -c "from iromusic_client import Orchestrator; print('Installation successful!')"
+```
+
+---
+
+## Quick Start
+
+### CLI Usage
+
+The fastest way to get started is using the command-line interface:
+
+```bash
+# Fetch all available data
+python -m iromusic_client.src.cli fetch
+
+# Fetch specific endpoint
+python -m iromusic_client.src.cli fetch --endpoint movie --type movies
+
+# Fetch with limited pages
+python -m iromusic_client.src.cli fetch --max-pages 5
+
+# Save to custom directory
+python -m iromusic_client.src.cli fetch --output-dir ./my_data
+```
+
+### Python API Usage
+
+For programmatic access:
+
+```python
+from iromusic_client import Orchestrator
+
+# Create orchestrator instance
+orchestrator = Orchestrator()
+
+# Fetch data from all endpoints
+results = orchestrator.run_all_endpoints(
+    endpoints=['movie', 'music'],
+    max_pages=10
+)
+
+# Print summary
+print(f"Total items fetched: {results['overall_stats']['run']['total_items']}")
+
+# Clean up
+orchestrator.close()
+```
+
+---
+
+## API Reference
+
+### config Module
+
+The configuration module provides centralized management of all library settings through environment variables and programmatic configuration.
+
+#### Configuration Class
+
+```python
+from iromusic_client import Config, get_config
+```
+
+##### Config()
+
+Singleton configuration class that loads settings from environment variables with sensible defaults.
+
+**Attributes:**
+
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `api_base_url` | str | `https://iromusicapp.ir` | Base URL for the API |
+| `timeout` | int | `30` | Request timeout in seconds |
+| `max_retries` | int | `5` | Maximum retry attempts |
+| `backoff_factor` | float | `2.0` | Exponential backoff multiplier |
+| `output_dir` | Path | `./output` | Directory for output files |
+| `log_level` | str | `INFO` | Logging level |
+| `cache_dir` | Path | `./cache` | Cache directory path |
+| `enable_cache` | bool | `True` | Enable response caching |
+| `page_size` | int | `20` | Items per page for pagination |
+
+**Example:**
+
+```python
+from iromusic_client import Config
+
+# Create configuration instance
+config = Config()
+
+# Modify settings programmatically
+config.timeout = 60
+config.max_retries = 10
+config.output_dir = './custom_data'
+
+# Get specific endpoint URL
+url = config.get_movie_posts_url('movies')
+# Returns: 'https://iromusicapp.ir/iroapi/movie/posts?type=movies'
+```
+
+##### get_config()
+
+Factory function to retrieve the singleton configuration instance.
+
+```python
+def get_config() -> Config
+```
+
+**Returns:** The global Config instance
+
+**Example:**
+
+```python
+config = get_config()
+print(config.api_base_url)
+```
+
+---
+
+### api_client Module
+
+The API client module handles all HTTP communications with the iromusicapp.ir API, including retry logic, rate limiting, and response caching.
+
+#### APIError Exception
+
+```python
+from iromusic_client import APIError
+```
+
+Base exception class for API-related errors.
+
+**Attributes:**
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `message` | str | Human-readable error message |
+| `status_code` | int | HTTP status code if available |
+| `response` | Response | The requests Response object |
+
+**Example:**
+
+```python
+try:
+    client.get(url)
+except APIError as e:
+    print(f"API Error: {e.message}, Status: {e.status_code}")
+```
+
+#### RateLimitError Exception
+
+```python
+from iromusic_client import RateLimitError
+```
+
+Exception raised when API returns 429 (Too Many Requests) status.
+
+**Attributes:**
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `retry_after` | Optional[int] | Seconds to wait before retrying |
+| `message` | str | Error message |
+| `status_code` | int | Always 429 |
+
+**Example:**
+
+```python
+try:
+    client.get(url)
+except RateLimitError as e:
+    print(f"Rate limited. Retry after {e.retry_after} seconds")
+```
+
+#### create_client()
+
+```python
+from iromusic_client import create_client
+
+def create_client(config: Optional[Config] = None) -> APIClient
+```
+
+Factory function to create an API client instance.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `config` | Optional[Config] | `None` | Configuration object |
+
+**Returns:** Configured APIClient instance
+
+**Example:**
+
+```python
+from iromusic_client import create_client
+
+client = create_client()
+response = client.get('https://iromusicapp.ir/iroapi/movie/posts')
+print(response.status_code)
+```
+
+#### APIClient Class
+
+Main HTTP client for API communication.
+
+```python
+from iromusic_client import APIClient
+
+client = APIClient(config=my_config)
+```
+
+##### Methods
+
+###### get()
+
+```python
+def get(
+    self,
+    url: str,
+    params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    timeout: Optional[int] = None,
+    use_cache: bool = True
+) -> requests.Response
+```
+
+Make a GET request to the specified URL.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `url` | str | Required | URL to request |
+| `params` | Optional[Dict[str, Any]] | `None` | Query parameters |
+| `headers` | Optional[Dict[str, str]] | `None` | Additional headers |
+| `timeout` | Optional[int] | `None` | Timeout override |
+| `use_cache` | bool | `True` | Use cached responses |
+
+**Returns:** requests.Response object
+
+**Raises:**
+- `requests.exceptions.ConnectionError`: On network issues
+- `requests.exceptions.Timeout`: On timeout
+- `RateLimitError`: On rate limit (429)
+- `APIError`: On other HTTP errors
+
+**Example:**
+
+```python
+response = client.get(
+    'https://iromusicapp.ir/iroapi/movie/posts',
+    params={'type': 'movies', 'page': 1}
+)
+data = response.json()
+```
+
+###### get_with_pagination()
+
+```python
+def get_with_pagination(
+    self,
+    url: str,
+    page_param: str = 'page',
+    max_pages: Optional[int] = None,
+    stop_condition: Optional[Callable] = None
+) -> List[Dict[str, Any]]
+```
+
+Fetch all pages from a paginated endpoint.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `url` | str | Required | Base URL for the endpoint |
+| `page_param` | str | `'page'` | Query parameter name for page number |
+| `max_pages` | Optional[int] | `None` | Maximum pages to fetch |
+| `stop_condition` | Optional[Callable] | `None` | Function to determine when to stop |
+
+**Returns:** List of all items fetched across pages
+
+**Example:**
+
+```python
+items = client.get_with_pagination(
+    'https://iromusicapp.ir/iroapi/movie/posts',
+    max_pages=10
+)
+print(f"Fetched {len(items)} items")
+```
+
+---
+
+### data_processor Module
+
+The data processor module provides functionality for validating, parsing, and transforming API responses into normalized Python data structures.
+
+#### ValidationError Exception
+
+```python
+from iromusic_client import ValidationError
+```
+
+Exception raised when data validation fails.
+
+**Attributes:**
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `message` | str | Error message |
+| `errors` | List[str] | Specific validation errors |
+| `data` | Any | Data that failed validation |
+
+#### DataProcessor Class
+
+```python
+from iromusic_client import DataProcessor
+
+processor = DataProcessor(
+    required_fields={'id', 'title'},
+    strict_mode=False
+)
+```
+
+##### Constructor
+
+```python
+def __init__(
+    self,
+    required_fields: Optional[Set[str]] = None,
+    optional_fields: Optional[Set[str]] = None,
+    strict_mode: bool = False
+) -> None
+```
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `required_fields` | Optional[Set[str]] | `{'id', 'type'}` | Fields required for validation |
+| `optional_fields` | Optional[Set[str]] | `set()` | Optional field names |
+| `strict_mode` | bool | `False` | Fail on any validation error |
+
+##### process_response()
+
+```python
+def process_response(
+    self,
+    response: Any,
+    required_fields: Optional[Set[str]] = None,
+    normalize: bool = True,
+    allow_empty: bool = True
+) -> Dict[str, Any]
+```
+
+Process an API response with validation and normalization.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `response` | Any | Required | API response (Response object, text, or dict) |
+| `required_fields` | Optional[Set[str]] | `None` | Override required fields |
+| `normalize` | bool | `True` | Normalize the data |
+| `allow_empty` | bool | `True` | Allow empty responses |
+
+**Returns:** Dictionary containing:
+- `data`: Processed data
+- `valid`: Boolean indicating validity
+- `errors`: List of validation errors
+- `stats`: Processing statistics
+
+**Example:**
+
+```python
+processor = DataProcessor(required_fields={'id', 'title'})
+result = processor.process_response(response)
+
+if result['valid']:
+    for item in result['data']:
+        print(f"Title: {item['title']}")
+```
+
+##### parse_json()
+
+```python
+def parse_json(
+    self,
+    response_text: str,
+    allow_empty: bool = False
+) -> Optional[Dict[str, Any]]
+```
+
+Parse JSON string with error handling.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `response_text` | str | Required | JSON string to parse |
+| `allow_empty` | bool | `False` | Allow empty/null responses |
+
+**Returns:** Parsed JSON data or None
+
+**Example:**
+
+```python
+data = processor.parse_json('{"key": "value"}')
+```
+
+---
+
+### file_handler Module
+
+The file handler module manages all file output operations, including timestamped filenames, organized directory structures, and atomic writes.
+
+#### FileWriteError Exception
+
+```python
+from iromusic_client import FileWriteError
+```
+
+Exception raised when file operations fail.
+
+**Attributes:**
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `message` | str | Error message |
+| `filepath` | Optional[Path] | File path that caused error |
+| `original_error` | Optional[Exception] | Original exception |
+
+#### FileHandler Class
+
+```python
+from iromusic_client import FileHandler
+
+handler = FileHandler(
+    output_dir='./output',
+    use_dated_dirs=True
+)
+```
+
+##### Constructor
+
+```python
+def __init__(
+    self,
+    output_dir: Union[str, Path] = './output',
+    use_dated_dirs: bool = True,
+    validate_permissions: bool = True
+) -> None
+```
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `output_dir` | Union[str, Path] | `'./output'` | Base output directory |
+| `use_dated_dirs` | bool | `True` | Organize by dated subdirectories |
+| `validate_permissions` | bool | `True` | Check write permissions |
+
+**Example:**
+
+```python
+handler = FileHandler(output_dir='./data')
+```
+
+##### save_json()
+
+```python
+def save_json(
+    self,
+    data: Any,
+    filename: str,
+    subdirectory: Optional[str] = None,
+    indent: int = 2,
+    use_timestamp: bool = True,
+    atomic: bool = True
+) -> Path
+```
+
+Save data as JSON file.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `data` | Any | Required | Data to save |
+| `filename` | str | Required | Output filename |
+| `subdirectory` | Optional[str] | `None` | Subdirectory within output |
+| `indent` | int | `2` | JSON indentation |
+| `use_timestamp` | bool | `True` | Add timestamp to filename |
+| `atomic` | bool | `True` | Use atomic write |
+
+**Returns:** Path to saved file
+
+**Example:**
+
+```python
+filepath = handler.save_json(
+    data={'items': items},
+    filename='movies.json',
+    subdirectory='api_data'
+)
+print(f"Saved to: {filepath}")
+```
+
+---
+
+### orchestrator Module
+
+The orchestrator module coordinates all operations including API calls, pagination, data processing, and file output.
+
+#### Orchestrator Class
+
+```python
+from iromusic_client import Orchestrator
+
+orchestrator = Orchestrator(
+    config=my_config,
+    output_level=OutputLevel.NORMAL
+)
+```
+
+##### Constructor
+
+```python
+def __init__(
+    self,
+    config: Optional[Config] = None,
+    output_level: OutputLevel = OutputLevel.NORMAL
+) -> None
+```
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `config` | Optional[Config] | `None` | Configuration object |
+| `output_level` | OutputLevel | `NORMAL` | Console output verbosity |
+
+##### run_endpoint()
+
+```python
+def run_endpoint(
+    self,
+    endpoint: str,
+    content_type: Optional[str] = None,
+    max_pages: Optional[int] = None,
+    save: bool = True
+) -> Dict[str, Any]
+```
+
+Fetch data from a specific endpoint and content type.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `endpoint` | str | Required | Endpoint category ('movie' or 'music') |
+| `content_type` | Optional[str] | `None` | Content type |
+| `max_pages` | Optional[int] | `None` | Maximum pages |
+| `save` | bool | `True` | Save results to file |
+
+**Returns:** Dictionary with results and statistics
+
+**Example:**
+
+```python
+result = orchestrator.run_endpoint(
+    endpoint='movie',
+    content_type='movies',
+    max_pages=5
+)
+print(f"Items: {result['items_count']}")
+```
+
+##### run_all_endpoints()
+
+```python
+def run_all_endpoints(
+    self,
+    endpoints: Optional[List[str]] = None,
+    content_types: Optional[Dict[str, List[str]]] = None,
+    max_pages: Optional[int] = None,
+    save: bool = True
+) -> Dict[str, Any]
+```
+
+Fetch data from all configured endpoints.
+
+**Parameters:**
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `endpoints` | Optional[List[str]] | `None` | Endpoints to process |
+| `content_types` | Optional[Dict] | `None` | Content types per endpoint |
+| `max_pages` | Optional[int] | `None` | Maximum pages per endpoint |
+| `save` | bool | `True` | Save results to files |
+
+**Returns:** Dictionary containing results for all endpoints
+
+**Example:**
+
+```python
+results = orchestrator.run_all_endpoints(
+    endpoints=['movie', 'music'],
+    content_types={
+        'movie': [None, 'movies', 'series'],
+        'music': ['albums', 'singles']
+    },
+    max_pages=10
+)
+```
+
+---
+
+### cli Module
+
+The CLI module provides a command-line interface for the library using Click.
+
+#### Available Commands
+
+##### fetch
+
+Fetch data from API endpoints.
+
+```bash
+python -m iromusic_client.src.cli fetch [OPTIONS]
+```
+
+**Options:**
+
+| Option | Short | Description | Default |
+|--------|-------|-------------|---------|
+| `--endpoint` | `-e` | Endpoint: movie, music, or all | `all` |
+| `--type` | `-t` | Content type | `all` |
+| `--max-pages` | `-m` | Maximum pages | All |
+| `--output-dir` | `-o` | Output directory | Config default |
+| `--no-save` | - | Don't save to files | False |
+| `--verbose` | `-v` | Verbose output | False |
+| `--debug` | - | Debug output | False |
+| `--quiet` | `-q` | Suppress output | False |
+
+**Examples:**
+
+```bash
+# Fetch all data
+iromusic fetch
+
+# Fetch movies only
+iromusic fetch --endpoint movie --type movies
+
+# Fetch with limit
+iromusic fetch --max-pages 5
+
+# Quiet mode
+iromusic fetch --quiet
+```
+
+##### config
+
+Manage configuration.
+
+```bash
+python -m iromusic_client.src.cli config [OPTIONS]
+```
+
+**Options:**
+
+| Option | Short | Description |
+|--------|-------|-------------|
+| `--show` | `-s` | Show current configuration |
+| `--set-timeout` | - | Set request timeout |
+| `--set-retries` | - | Set max retries |
+| `--set-output-dir` | - | Set output directory |
+
+**Examples:**
+
+```bash
+# Show configuration
+iromusic config --show
+
+# Set timeout
+iromusic config --set-timeout 60
+```
+
+##### status
+
+Show status and statistics.
+
+```bash
+python -m iromusic_client.src.cli status [OPTIONS]
+```
+
+**Options:**
+
+| Option | Description |
+|--------|-------------|
+| `--show-cache` | Show cached URLs |
+| `--clear-cache` | Clear the cache |
+
+---
+
+## Configuration
+
+### Environment Variables
+
+All configuration can be set via environment variables:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `IROMUSIC_API_BASE_URL` | `https://iromusicapp.ir` | API base URL |
+| `IROMUSIC_TIMEOUT` | `30` | Request timeout (seconds) |
+| `IROMUSIC_MAX_RETRIES` | `5` | Maximum retry attempts |
+| `IROMUSIC_BACKOFF_FACTOR` | `2` | Exponential backoff multiplier |
+| `IROMUSIC_OUTPUT_DIR` | `./output` | Output directory |
+| `IROMUSIC_LOG_LEVEL` | `INFO` | Logging level |
+| `IROMUSIC_CACHE_DIR` | `./cache` | Cache directory |
+| `IROMUSIC_ENABLE_CACHE` | `true` | Enable caching |
+| `IROMUSIC_PAGE_SIZE` | `20` | Items per page |
+
+### Programmatic Configuration
+
+```python
+from iromusic_client import Config
+
+config = Config()
+
+# Modify settings
+config.timeout = 60
+config.max_retries = 10
+config.output_dir = './custom_output'
+config.log_level = 'DEBUG'
+config.enable_cache = True
+config.page_size = 50
+
+# Use with client
+from iromusic_client import create_client
+client = create_client(config)
+```
+
+---
+
+## Usage Examples
+
+### Basic Usage
+
+```python
+from iromusic_client import Orchestrator
+
+# Create orchestrator
+orchestrator = Orchestrator()
+
+# Fetch movie data
+result = orchestrator.run_endpoint(
+    endpoint='movie',
+    content_type='movies'
+)
+
+print(f"Fetched {result['items_count']} movies")
+print(f"Success: {result['success']}")
+```
+
+### Advanced Usage with Custom Configuration
+
+```python
+from iromusic_client import Config, create_client, DataProcessor
+
+# Configure
+config = Config()
+config.timeout = 60
+config.max_retries = 10
+
+# Create client
+client = create_client(config)
+
+# Make requests
+response = client.get('https://iromusicapp.ir/iroapi/movie/posts?type=movies')
+
+# Process data
+processor = DataProcessor(required_fields={'id', 'title'})
+result = processor.process_response(response)
+
+# Work with data
+for item in result['data']:
+    print(f"Title: {item.get('title')}")
+```
+
+### Pagination Example
+
+```python
+from iromusic_client import create_client
+
+client = create_client()
+
+# Fetch all pages
+all_items = client.get_with_pagination(
+    url='https://iromusicapp.ir/iroapi/movie/posts',
+    max_pages=10  # Limit to 10 pages
+)
+
+print(f"Total items: {len(all_items)}")
+```
+
+### File Output Example
+
+```python
+from iromusic_client import FileHandler
+
+handler = FileHandler(output_dir='./data')
+
+# Save JSON with automatic timestamp
+filepath = handler.save_json(
+    data={'movies': movie_list},
+    filename='movies.json',
+    subdirectory='api_data',
+    use_timestamp=True
+)
+
+print(f"Saved to: {filepath}")
+```
+
+### Error Handling Example
+
+```python
+from iromusic_client import (
+    Orchestrator,
+    APIError,
+    RateLimitError,
+    ValidationError,
+    FileWriteError
+)
+
+try:
+    orchestrator = Orchestrator()
+    results = orchestrator.run_all_endpoints()
+    
+except RateLimitError as e:
+    print(f"Rate limited. Wait {e.retry_after}s")
+    
+except ValidationError as e:
+    print(f"Validation failed: {e.errors}")
+    
+except FileWriteError as e:
+    print(f"File error: {e.filepath}")
+    
+except APIError as e:
+    print(f"API error: {e.message}")
+    
+finally:
+    orchestrator.close()
+```
+
+---
+
+## Error Handling
+
+The library provides specific exception types for different error scenarios:
+
+| Exception | Description | Common Causes |
+|-----------|-------------|----------------|
+| `APIError` | General API errors | Server errors (5xx), client errors (4xx) |
+| `RateLimitError` | Rate limit exceeded | Too many requests (429) |
+| `ValidationError` | Data validation failed | Missing required fields |
+| `FileWriteError` | File operations failed | Permission denied, disk full |
+| `requests.exceptions.ConnectionError` | Network issues | No internet, DNS failure |
+| `requests.exceptions.Timeout` | Request timeout | Server slow to respond |
+
+### Best Practices
+
+```python
+from iromusic_client import create_client, RateLimitError, APIError
+import time
+
+client = create_client()
+
+max_retries = 3
+attempt = 0
+
+while attempt < max_retries:
+    try:
+        response = client.get(url)
+        break
+    except RateLimitError as e:
+        attempt += 1
+        wait_time = e.retry_after or 60
+        print(f"Rate limited. Waiting {wait_time}s...")
+        time.sleep(wait_time)
+    except APIError as e:
+        print(f"API error: {e}")
+        break
+```
+
+---
+
+## Logging
+
+### Basic Configuration
+
+```python
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+```
+
+### Module-Specific Logging
+
+```python
+import logging
+
+# Set level for specific modules
+logging.getLogger('iromusic_client.api_client').setLevel(logging.DEBUG)
+logging.getLogger('iromusic_client.orchestrator').setLevel(logging.INFO)
+```
+
+### Log Levels
+
+| Level | Description |
+|-------|-------------|
+| `DEBUG` | Detailed information for debugging |
+| `INFO` | General informational messages |
+| `WARNING` | Warning messages |
+| `ERROR` | Error messages |
+| `CRITICAL` | Critical issues |
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+#### Connection Errors
+
+**Problem:** `requests.exceptions.ConnectionError`
+
+**Solutions:**
+1. Check internet connection
+2. Verify API URL is correct
+3. Check firewall/proxy settings
+4. Increase timeout: `config.timeout = 60`
+
+#### Rate Limiting
+
+**Problem:** `RateLimitError: Rate limit exceeded`
+
+**Solutions:**
+1. Wait before retrying
+2. Reduce request frequency
+3. Implement request throttling
+4. Use caching for repeated requests
+
+#### JSON Parse Errors
+
+**Problem:** `json.JSONDecodeError`
+
+**Solutions:**
+1. Check API response format
+2. Enable debug logging to see raw response
+3. Use `allow_empty=True` in processor
+
+#### Permission Errors
+
+**Problem:** `FileWriteError: No write permission`
+
+**Solutions:**
+1. Check output directory permissions
+2. Use a writable directory
+3. Set correct file permissions
+
+### Debug Mode
+
+Enable debug mode for detailed logging:
+
+```bash
+python -m iromusic_client.src.cli fetch --debug
+```
+
+Or programmatically:
+
+```python
+config = Config()
+config.log_level = 'DEBUG'
+```
+
+---
+
+## Contributing
+
+### Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/example/iromusic_client.git
+cd iromusic_client
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install in development mode
+pip install -e .
+```
+
+### Running Tests
+
+```bash
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=iromusic_client tests/
+
+# Run specific test file
+pytest tests/test_api_client.py
+
+# Run in verbose mode
+pytest -v
+```
+
+### Code Style
+
+The project follows PEP 8 guidelines and uses:
+
+- **Black** for code formatting
+- **Flake8** for linting
+- **MyPy** for type checking
+
+```bash
+# Format code
+black src/
+
+# Lint
+flake8 src/
+
+# Type check
+mypy src/
+```
+
+### Pull Request Guidelines
+
+1. Fork the repository
+2. Create a feature branch
+3. Write tests for new functionality
+4. Ensure all tests pass
+5. Update documentation
+6. Submit a pull request
+
+---
+
+## Code of Conduct
+
+This project adheres to the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code.
+
+Please read the full [Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct.md) before contributing.
+
+---
+
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2024 iromusic_client
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## Support
+
+### Getting Help
+
+- **Documentation**: See this README and inline documentation
+- **Issues**: Report bugs at https://github.com/example/iromusic_client/issues
+- **Discussions**: Use GitHub Discussions for questions
+
+### Resources
+
+- [Python Documentation](https://docs.python.org/3/)
+- [requests Library](https://docs.python-requests.org/)
+- [Click Documentation](https://click.palletsprojects.com/)
+- [urllib3 Documentation](https://urllib3.readthedocs.io/)
+
+---
+
+## Changelog
+
+### Version 1.0.0 (2024-01-01)
+
+- Initial release
+- API client with retry logic
+- Data processing and validation
+- File handling with timestamps
+- Orchestrator for coordinated operations
+- CLI interface
+- Full type annotations
+- Comprehensive documentation

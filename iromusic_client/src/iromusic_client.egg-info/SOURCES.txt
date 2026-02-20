@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/iromusic_client.egg-info/PKG-INFO
+src/iromusic_client.egg-info/SOURCES.txt
+src/iromusic_client.egg-info/dependency_links.txt
+src/iromusic_client.egg-info/entry_points.txt
+src/iromusic_client.egg-info/requires.txt
+src/iromusic_client.egg-info/top_level.txt

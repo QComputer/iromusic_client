@@ -1,0 +1,2 @@
+[console_scripts]
+iromusic = iromusic_client.src.cli:main
