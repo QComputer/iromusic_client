@@ -17,7 +17,7 @@ setup(
     long_description_content_type="text/markdown",
     author="iromusic_client",
     author_email="dissonancee@gmail.com",
-    url="https://github.com/example/iromusic_client",
+    url="https://github.com/qcomputer/iromusic_client",
     package_dir={"": "src"},
     packages=["iromusic_client"],
     python_requires=">=3.8",
