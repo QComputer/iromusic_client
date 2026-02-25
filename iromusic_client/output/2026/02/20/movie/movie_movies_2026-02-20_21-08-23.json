@@ -1,0 +1,800 @@
+[
+  {
+    "id": 25094,
+    "type": "movies",
+    "slug": "hellfire-2024",
+    "englishTitle": "Hellfire",
+    "alternateTitle": "Hellfire",
+    "year": "2024",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/h/hellfire.2026.jpg",
+    "genres": [
+      {
+        "title": "Thriller",
+        "slug": "thriller",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "N/A",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "0",
+    "updatedAt": "1404/12/1",
+    "updateTime": "2026-02-20T16:14:49.187Z",
+    "created_at": "2026-02-20T21:08:23.893331",
+    "updated_at": "2026-02-20T21:08:23.893343",
+    "processed_at": "2026-02-20T21:08:23.893346"
+  },
+  {
+    "id": 25092,
+    "type": "movies",
+    "slug": "shelter-2026",
+    "englishTitle": "Shelter",
+    "alternateTitle": "Shelter",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/s/shelter.2026.jpg",
+    "genres": [
+      {
+        "title": "Thriller",
+        "slug": "thriller",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "N/A",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/30",
+    "updateTime": "2026-02-19T10:36:25.338Z",
+    "created_at": "2026-02-20T21:08:23.893364",
+    "updated_at": "2026-02-20T21:08:23.893368",
+    "processed_at": "2026-02-20T21:08:23.893370"
+  },
+  {
+    "id": 25091,
+    "type": "movies",
+    "slug": "return-to-silent-hill-2026",
+    "englishTitle": "Return to Silent Hill",
+    "alternateTitle": "Return to Silent Hill",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/r/return-to-silent-hill-2026.jpg",
+    "genres": [
+      {
+        "title": "Horror",
+        "slug": "horror",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "R",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "0",
+    "updatedAt": "1404/11/30",
+    "updateTime": "2026-02-19T10:30:24.830Z",
+    "created_at": "2026-02-20T21:08:23.893382",
+    "updated_at": "2026-02-20T21:08:23.893385",
+    "processed_at": "2026-02-20T21:08:23.893388"
+  },
+  {
+    "id": 25090,
+    "type": "movies",
+    "slug": "28-years-later-the-bone-temple-2026",
+    "englishTitle": "28 Years Later: The Bone Temple",
+    "alternateTitle": "28 Years Later: The Bone Temple",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/2/28-years-later-the-bone-temple-2026.jpg",
+    "genres": [
+      {
+        "title": "Horror",
+        "slug": "horror",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "R",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "0",
+    "updatedAt": "1404/11/30",
+    "updateTime": "2026-02-19T10:27:23.133Z",
+    "created_at": "2026-02-20T21:08:23.893398",
+    "updated_at": "2026-02-20T21:08:23.893400",
+    "processed_at": "2026-02-20T21:08:23.893403"
+  },
+  {
+    "id": 25086,
+    "type": "movies",
+    "slug": "tabestani-ke-bard-amad-1403",
+    "englishTitle": "Tabestani Ke Barf Amad",
+    "alternateTitle": "تابستانی که برف آمد",
+    "year": "1403",
+    "imageUrl": "https://iroapp.ir//images/movie/t/tabestani-ke-bard-amad-1403-poster.jpg",
+    "genres": [
+      {
+        "title": "Family",
+        "slug": "family",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "social",
+        "slug": "social",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/29",
+    "updateTime": "2026-02-18T16:35:15.379Z",
+    "created_at": "2026-02-20T21:08:23.893412",
+    "updated_at": "2026-02-20T21:08:23.893415",
+    "processed_at": "2026-02-20T21:08:23.893417"
+  },
+  {
+    "id": 25085,
+    "type": "movies",
+    "slug": "shaah-naghsh-1403",
+    "englishTitle": "Shaah Naghsh",
+    "alternateTitle": "شاه نقش",
+    "year": "1403",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1403/s/shah.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/29",
+    "updateTime": "2026-02-18T16:26:43.664Z",
+    "created_at": "2026-02-20T21:08:23.893427",
+    "updated_at": "2026-02-20T21:08:23.893429",
+    "processed_at": "2026-02-20T21:08:23.893432"
+  },
+  {
+    "id": 25062,
+    "type": "movies",
+    "slug": "predator-badlands-2025",
+    "englishTitle": "Predator: Badlands",
+    "alternateTitle": "Predator: Badlands",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/p/predator.badlands.jpg",
+    "genres": [
+      {
+        "title": "Sci-Fi",
+        "slug": "sci-fi",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Adventure",
+        "slug": "adventure",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "+13",
+    "imdbRating": "7.6",
+    "views": "241",
+    "likes": "3",
+    "updatedAt": "1404/11/27",
+    "updateTime": "2026-02-16T20:42:08.876Z",
+    "created_at": "2026-02-20T21:08:23.893441",
+    "updated_at": "2026-02-20T21:08:23.893443",
+    "processed_at": "2026-02-20T21:08:23.893445"
+  },
+  {
+    "id": 25084,
+    "type": "movies",
+    "slug": "eternity-2025",
+    "englishTitle": "Eternity",
+    "alternateTitle": "Eternity",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/e/Eternity2025.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Fantasy",
+        "slug": "fantasy",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "PG-13",
+    "imdbRating": "6.9",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/27",
+    "updateTime": "2026-02-16T20:33:43.505Z",
+    "created_at": "2026-02-20T21:08:23.893454",
+    "updated_at": "2026-02-20T21:08:23.893457",
+    "processed_at": "2026-02-20T21:08:23.893459"
+  },
+  {
+    "id": 25083,
+    "type": "movies",
+    "slug": "the-super-mario-bros.-movie-2023",
+    "englishTitle": "The Super Mario Bros. Movie",
+    "alternateTitle": "The Super Mario Bros. Movie",
+    "year": "2023",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/t/thesupermariobrothers2023.jpg",
+    "genres": [
+      {
+        "title": "Animation",
+        "slug": "animation",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Adventure",
+        "slug": "adventure",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "PG",
+    "imdbRating": "7",
+    "views": "0",
+    "likes": "0",
+    "updatedAt": "1404/11/27",
+    "updateTime": "2026-02-16T08:55:19.532Z",
+    "created_at": "2026-02-20T21:08:23.893472",
+    "updated_at": "2026-02-20T21:08:23.893483",
+    "processed_at": "2026-02-20T21:08:23.893488"
+  },
+  {
+    "id": 25082,
+    "type": "movies",
+    "slug": "the-secret-agent-2025",
+    "englishTitle": "The Secret Agent",
+    "alternateTitle": "The Secret Agent",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir//archive/movies/english/t/thesecrentagent2025.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Crime",
+        "slug": "crime",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "R (USA)",
+    "imdbRating": "7.4",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/25",
+    "updateTime": "2026-02-14T23:13:42.684Z",
+    "created_at": "2026-02-20T21:08:23.893504",
+    "updated_at": "2026-02-20T21:08:23.893508",
+    "processed_at": "2026-02-20T21:08:23.893778"
+  },
+  {
+    "id": 25080,
+    "type": "movies",
+    "slug": "baraye-rana-1404",
+    "englishTitle": "Baraye Rana",
+    "alternateTitle": "برای رعنا",
+    "year": "1404",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1404/b/barayeRana.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Family",
+        "slug": "family",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "2",
+    "updatedAt": "1404/11/22",
+    "updateTime": "2026-02-11T18:21:24.315Z",
+    "created_at": "2026-02-20T21:08:23.893798",
+    "updated_at": "2026-02-20T21:08:23.893801",
+    "processed_at": "2026-02-20T21:08:23.893803"
+  },
+  {
+    "id": 25079,
+    "type": "movies",
+    "slug": "dainasour-1403",
+    "englishTitle": "Dainasour",
+    "alternateTitle": "دایناسور",
+    "year": "1403",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1403/d/dainasor.jpg",
+    "genres": [
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Family",
+        "slug": "family",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "1",
+    "updatedAt": "1404/11/21",
+    "updateTime": "2026-02-10T18:55:55.507Z",
+    "created_at": "2026-02-20T21:08:23.893814",
+    "updated_at": "2026-02-20T21:08:23.893816",
+    "processed_at": "2026-02-20T21:08:23.893818"
+  },
+  {
+    "id": 25078,
+    "type": "movies",
+    "slug": "haftad-si-1403",
+    "englishTitle": "Haftad Si",
+    "alternateTitle": "هفتاد سی",
+    "year": "1403",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1403/h/haftadsi.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "0",
+    "likes": "2",
+    "updatedAt": "1404/11/21",
+    "updateTime": "2026-02-10T18:52:36.092Z",
+    "created_at": "2026-02-20T21:08:23.893835",
+    "updated_at": "2026-02-20T21:08:23.893838",
+    "processed_at": "2026-02-20T21:08:23.893840"
+  },
+  {
+    "id": 25076,
+    "type": "movies",
+    "slug": "roozegari-irani-1404",
+    "englishTitle": "Roozegari Irani",
+    "alternateTitle": "روزگاری ایرانی",
+    "year": "1404",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1404/r/roozegari.jpg",
+    "genres": [
+      {
+        "title": "History",
+        "slug": "history",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "War",
+        "slug": "war",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "9",
+    "likes": "1",
+    "updatedAt": "1404/11/18",
+    "updateTime": "2026-02-07T08:54:02.445Z",
+    "created_at": "2026-02-20T21:08:23.893850",
+    "updated_at": "2026-02-20T21:08:23.893852",
+    "processed_at": "2026-02-20T21:08:23.893854"
+  },
+  {
+    "id": 25075,
+    "type": "movies",
+    "slug": "saloon-4-1404",
+    "englishTitle": "Saloon 4",
+    "alternateTitle": "سالن 4",
+    "year": "1404",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1404/s/salon4.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "57",
+    "likes": "3",
+    "updatedAt": "1404/11/15",
+    "updateTime": "2026-02-04T08:38:39.258Z",
+    "created_at": "2026-02-20T21:08:23.893863",
+    "updated_at": "2026-02-20T21:08:23.893866",
+    "processed_at": "2026-02-20T21:08:23.893868"
+  },
+  {
+    "id": 25073,
+    "type": "movies",
+    "slug": "anjaa-haman-saat-1397",
+    "englishTitle": "Anjaa Haman Saat",
+    "alternateTitle": "آنجا همان ساعت",
+    "year": "1397",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/1397/a/anja.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Romance",
+        "slug": "romance",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "20",
+    "likes": "3",
+    "updatedAt": "1404/11/14",
+    "updateTime": "2026-02-03T20:06:26.642Z",
+    "created_at": "2026-02-20T21:08:23.893876",
+    "updated_at": "2026-02-20T21:08:23.893879",
+    "processed_at": "2026-02-20T21:08:23.893881"
+  },
+  {
+    "id": 25071,
+    "type": "movies",
+    "slug": "yadegare-jonoob-2026",
+    "englishTitle": "Yadegare Jonoob",
+    "alternateTitle": "یادگار جنوب",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir//archive/movies/per/2025/y/yadegar.jpg",
+    "genres": [
+      {
+        "title": "Romance",
+        "slug": "romance",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Family",
+        "slug": "family",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "0",
+    "views": "21",
+    "likes": "2",
+    "updatedAt": "1404/11/13",
+    "updateTime": "2026-02-02T08:16:46.717Z",
+    "created_at": "2026-02-20T21:08:23.893890",
+    "updated_at": "2026-02-20T21:08:23.893892",
+    "processed_at": "2026-02-20T21:08:23.893894"
+  },
+  {
+    "id": 25068,
+    "type": "movies",
+    "slug": "the-rip-2026",
+    "englishTitle": "The Rip",
+    "alternateTitle": "The Rip",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/t/the.rip.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Mystery",
+        "slug": "mystery",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Crime",
+        "slug": "crime",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "R",
+    "imdbRating": "6.8",
+    "views": "14",
+    "likes": "1",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:33:57.738Z",
+    "created_at": "2026-02-20T21:08:23.893903",
+    "updated_at": "2026-02-20T21:08:23.893905",
+    "processed_at": "2026-02-20T21:08:23.893908"
+  },
+  {
+    "id": 25067,
+    "type": "movies",
+    "slug": "the-wrecking-crew-2026",
+    "englishTitle": "The Wrecking Crew",
+    "alternateTitle": "The Wrecking Crew",
+    "year": "2026",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/t/the.recking.crew.jpeg",
+    "genres": [
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Crime",
+        "slug": "crime",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "6.6",
+    "views": "27",
+    "likes": "1",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:31:19.401Z",
+    "created_at": "2026-02-20T21:08:23.893916",
+    "updated_at": "2026-02-20T21:08:23.893919",
+    "processed_at": "2026-02-20T21:08:23.893921"
+  },
+  {
+    "id": 25066,
+    "type": "movies",
+    "slug": "my-daughter-is-a-zombie-2025",
+    "englishTitle": "My Daughter Is a Zombie",
+    "alternateTitle": "My Daughter Is a Zombie",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/m/my.daughter.is.zombie.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Fantasy",
+        "slug": "fantasy",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "+13",
+    "imdbRating": "6.7",
+    "views": "7",
+    "likes": "1",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:28:04.738Z",
+    "created_at": "2026-02-20T21:08:23.893930",
+    "updated_at": "2026-02-20T21:08:23.893932",
+    "processed_at": "2026-02-20T21:08:23.893934"
+  },
+  {
+    "id": 25065,
+    "type": "movies",
+    "slug": "wake-up-dead-man-a-knives-out-mystery-2025",
+    "englishTitle": "Wake Up Dead Man: A Knives Out Mystery",
+    "alternateTitle": "Wake Up Dead Man: A Knives Out Mystery",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/w/wakeupdeadman.jpg",
+    "genres": [
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Comedy",
+        "slug": "comedy",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Crime",
+        "slug": "crime",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "",
+    "imdbRating": "7.4",
+    "views": "45",
+    "likes": "1",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:25:14.924Z",
+    "created_at": "2026-02-20T21:08:23.893943",
+    "updated_at": "2026-02-20T21:08:23.893945",
+    "processed_at": "2026-02-20T21:08:23.893947"
+  },
+  {
+    "id": 25064,
+    "type": "movies",
+    "slug": "zootopia-2-2025",
+    "englishTitle": "Zootopia 2",
+    "alternateTitle": "Zootopia 2",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/z/zootopia2.jpg",
+    "genres": [
+      {
+        "title": "Animation",
+        "slug": "animation",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Adventure",
+        "slug": "adventure",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "PG",
+    "imdbRating": "7.5",
+    "views": "6",
+    "likes": "2",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:22:42.557Z",
+    "created_at": "2026-02-20T21:08:23.893956",
+    "updated_at": "2026-02-20T21:08:23.893958",
+    "processed_at": "2026-02-20T21:08:23.893960"
+  },
+  {
+    "id": 25063,
+    "type": "movies",
+    "slug": "tron-ares-2025",
+    "englishTitle": "Tron: Ares",
+    "alternateTitle": "Tron: Ares",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/t/tron.ares.jpg",
+    "genres": [
+      {
+        "title": "Sci-Fi",
+        "slug": "sci-fi",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Action",
+        "slug": "action",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Adventure",
+        "slug": "adventure",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "+13",
+    "imdbRating": "6.3",
+    "views": "5",
+    "likes": "1",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T22:19:58.016Z",
+    "created_at": "2026-02-20T21:08:23.893972",
+    "updated_at": "2026-02-20T21:08:23.893975",
+    "processed_at": "2026-02-20T21:08:23.893977"
+  },
+  {
+    "id": 25060,
+    "type": "movies",
+    "slug": "nuremberg-2025",
+    "englishTitle": "Nuremberg",
+    "alternateTitle": "Nuremberg",
+    "year": "2025",
+    "imageUrl": "https://iroapp.ir/archive/movies/english/n/nuremberg.jpg",
+    "genres": [
+      {
+        "title": "Biography",
+        "slug": "biography",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Drama",
+        "slug": "drama",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "rated": "+18",
+    "imdbRating": "7.4",
+    "views": "129",
+    "likes": "3",
+    "updatedAt": "1404/11/10",
+    "updateTime": "2026-01-30T21:48:00.227Z",
+    "created_at": "2026-02-20T21:08:23.893985",
+    "updated_at": "2026-02-20T21:08:23.893988",
+    "processed_at": "2026-02-20T21:08:23.893990"
+  }
+]

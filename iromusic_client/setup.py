@@ -38,7 +38,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "iromusic=iromusic_client.src.cli:main",
+            "iromusic=iromusic_client.cli:main",
         ],
     },
     classifiers=[

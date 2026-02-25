@@ -1,5 +1,13 @@
 README.md
 setup.py
+src/iromusic_client/__init__.py
+src/iromusic_client/api_client.py
+src/iromusic_client/cli.py
+src/iromusic_client/config.py
+src/iromusic_client/data_processor.py
+src/iromusic_client/file_handler.py
+src/iromusic_client/imdb_enhancer.py
+src/iromusic_client/orchestrator.py
 src/iromusic_client.egg-info/PKG-INFO
 src/iromusic_client.egg-info/SOURCES.txt
 src/iromusic_client.egg-info/dependency_links.txt

@@ -520,6 +520,9 @@ class Orchestrator:
             # Finalize and collect stats
             self.stats.finalize()
             
+            # Debug: print client stats
+            print(f"DEBUG: client.stats.total_requests = {self.client.stats.total_requests}")
+            
             # Copy API stats from client
             self.stats.api_stats.total_requests = self.client.stats.total_requests
             self.stats.api_stats.successful_requests = self.client.stats.successful_requests
@@ -527,6 +530,9 @@ class Orchestrator:
             self.stats.api_stats.total_retries = self.client.stats.total_retries
             self.stats.api_stats.total_time = self.client.stats.total_time
             self.stats.api_stats.last_request_time = self.client.stats.last_request_time
+            
+            # Debug: print stats after copy
+            print(f"DEBUG: self.stats.api_stats.total_requests = {self.stats.api_stats.total_requests}")
             
             # Get file handler stats
             file_stats = self.file_handler.get_stats()
@@ -570,16 +576,17 @@ class Orchestrator:
         total_items = sum(r.get('items_count', 0) for r in endpoints.values())
         self.print_status(f"Total items: {total_items}", 'info')
         
-        # API stats (run_stats already contains the API stats at top level)
+        # API stats
+        api_stats = run_stats.get('api_stats', {})
         self.print_status(
-            f"API requests: {run_stats.get('successful_requests', 0)}/"
-            f"{run_stats.get('total_api_requests', 0)} successful",
+            f"API requests: {api_stats.get('successful_requests', 0)}/"
+            f"{api_stats.get('total_api_requests', 0)} successful",
             'info'
         )
         
-        if run_stats.get('total_retries', 0) > 0:
+        if api_stats.get('total_retries', 0) > 0:
             self.print_status(
-                f"Total retries: {run_stats.get('total_retries', 0)}",
+                f"Total retries: {api_stats.get('total_retries', 0)}",
                 'warning'
             )
         

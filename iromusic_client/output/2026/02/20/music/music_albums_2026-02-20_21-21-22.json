@@ -1,0 +1,956 @@
+[
+  {
+    "id": 13453,
+    "type": "albums",
+    "slug": "various-artists-the-official-uk-top-100-singles-chart-part1",
+    "englishTitle": "The Official Uk Top 100 Singles Chart - Part1",
+    "alternateTitle": "The Official Uk Top 100 Singles Chart - Part1",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/v/various-artists-the-official-uk-top-100-singles-chart-part1.jpg",
+    "country": "UK",
+    "updatedAt": "1404/11/28",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Rock",
+        "slug": "rock",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Dance",
+        "slug": "dance",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "0",
+    "updateTime": "2026-02-17T18:31:13.527Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995479",
+    "updated_at": "2026-02-20T21:21:22.995513",
+    "processed_at": "2026-02-20T21:21:22.995525"
+  },
+  {
+    "id": 13452,
+    "type": "albums",
+    "slug": "chuu-xo-my-cyberlove",
+    "englishTitle": "Xo, My Cyberlove",
+    "alternateTitle": "Xo, My Cyberlove",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/c/chuu-xo-my-cyberlove.jpg",
+    "country": "",
+    "updatedAt": "1404/11/27",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Chuu",
+        "slug": "chuu",
+        "titleFarsi": null,
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "K Pop",
+        "slug": "k-pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "1",
+    "likes": "1",
+    "updateTime": "2026-02-16T09:30:44.116Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995567",
+    "updated_at": "2026-02-20T21:21:22.995573",
+    "processed_at": "2026-02-20T21:21:22.995577"
+  },
+  {
+    "id": 13451,
+    "type": "albums",
+    "slug": "various-artists-trance-party-2026",
+    "englishTitle": "Trance Party 2026",
+    "alternateTitle": "Trance Party 2026",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/v/various-artists-trance-party-2026.jpg",
+    "country": "",
+    "updatedAt": "1404/11/27",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Trance",
+        "slug": "trance",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "1",
+    "likes": "1",
+    "updateTime": "2026-02-16T09:27:58.163Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995600",
+    "updated_at": "2026-02-20T21:21:22.995604",
+    "processed_at": "2026-02-20T21:21:22.995608"
+  },
+  {
+    "id": 13450,
+    "type": "albums",
+    "slug": "mika-hyperlove",
+    "englishTitle": "Hyperlove",
+    "alternateTitle": "Hyperlove",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/m/mika-hyperlove.jpg",
+    "country": "",
+    "updatedAt": "1404/11/27",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Mika",
+        "slug": "mika",
+        "titleFarsi": "mika",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/m/mika.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "0",
+    "updateTime": "2026-02-16T09:20:50.255Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995626",
+    "updated_at": "2026-02-20T21:21:22.995630",
+    "processed_at": "2026-02-20T21:21:22.995634"
+  },
+  {
+    "id": 13449,
+    "type": "albums",
+    "slug": "a-boogie-wit-da-hoodie-before-artistry",
+    "englishTitle": "Before Artistry",
+    "alternateTitle": "Before Artistry",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/a/a-boogie-wit-da-hoodie-before-artistry.jpg",
+    "country": "",
+    "updatedAt": "1404/11/27",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "A Boogie Wit Da Hoodie",
+        "slug": "a-boogie-wit-da-hoodie",
+        "titleFarsi": "a boogie wit da hoodie",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/a/a-boogie-wit-da-hoodie.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Hip Hop",
+        "slug": "hip-hop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "0",
+    "updateTime": "2026-02-16T09:10:43.421Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995651",
+    "updated_at": "2026-02-20T21:21:22.995655",
+    "processed_at": "2026-02-20T21:21:22.995659"
+  },
+  {
+    "id": 13448,
+    "type": "albums",
+    "slug": "pat-metheny-8081",
+    "englishTitle": "80/81",
+    "alternateTitle": "80/81",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/p/pat-metheny-8081.jpg",
+    "country": "",
+    "updatedAt": "1404/11/26",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Pat Metheny",
+        "slug": "pat-metheny",
+        "titleFarsi": "pat metheny",
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Jazz Fusion",
+        "slug": "jazz-fusion",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "1",
+    "updateTime": "2026-02-15T13:25:39.469Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995675",
+    "updated_at": "2026-02-20T21:21:22.995679",
+    "processed_at": "2026-02-20T21:21:22.995683"
+  },
+  {
+    "id": 13447,
+    "type": "albums",
+    "slug": "would-be-goods-tears-before-bedtime",
+    "englishTitle": "Tears Before Bedtime",
+    "alternateTitle": "Tears Before Bedtime",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/w/would-be-goods-tears-before-bedtime.jpg",
+    "country": "USA",
+    "updatedAt": "1404/11/26",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Would Be Goods",
+        "slug": "would-be-goods",
+        "titleFarsi": null,
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Alternative",
+        "slug": "alternative",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Indie",
+        "slug": "indie",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Alternative & Indie",
+        "slug": "alternative-indie",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "1",
+    "updateTime": "2026-02-15T12:57:42.313Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995698",
+    "updated_at": "2026-02-20T21:21:22.995702",
+    "processed_at": "2026-02-20T21:21:22.995706"
+  },
+  {
+    "id": 13446,
+    "type": "albums",
+    "slug": "madonna-celebration-deluxe-version",
+    "englishTitle": "Celebration (Deluxe Version)",
+    "alternateTitle": "Celebration (Deluxe Version)",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/m/madonna-celebration-deluxe-version.jpg",
+    "country": "United States",
+    "updatedAt": "1404/11/26",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Madonna",
+        "slug": "madonna",
+        "titleFarsi": "madonna",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/m/madonna.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "2",
+    "updateTime": "2026-02-15T12:53:49.482Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995728",
+    "updated_at": "2026-02-20T21:21:22.995732",
+    "processed_at": "2026-02-20T21:21:22.995737"
+  },
+  {
+    "id": 13442,
+    "type": "albums",
+    "slug": "mansour-7x",
+    "englishTitle": "7X",
+    "alternateTitle": "7X",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/m/mansour-7x.jpg",
+    "country": "",
+    "updatedAt": "1404/11/25",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Mansour",
+        "slug": "mansour",
+        "titleFarsi": "منصور",
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "1",
+    "updateTime": "2026-02-14T16:38:42.541Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995796",
+    "updated_at": "2026-02-20T21:21:22.995810",
+    "processed_at": "2026-02-20T21:21:22.995815"
+  },
+  {
+    "id": 13439,
+    "type": "albums",
+    "slug": "mahdyar-ft-fadaei-rend",
+    "englishTitle": "Rend",
+    "alternateTitle": "رند",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/m/mahdyar-ft-fadaei-rend.jpg",
+    "country": "Iran",
+    "updatedAt": "1404/11/24",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Fadaei",
+        "slug": "fadaei",
+        "titleFarsi": "فدایی",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/f/fadaei.jpg"
+      },
+      {
+        "title": "Mahdyar",
+        "slug": "mahdyar",
+        "titleFarsi": "مهدیار آقاجانی",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/m/mahdyar.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Rap/Hip Hop",
+        "slug": "raphip-hop",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Rap",
+        "slug": "rap",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Hip Hop",
+        "slug": "hip-hop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "1",
+    "updateTime": "2026-02-13T12:36:20.465Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995846",
+    "updated_at": "2026-02-20T21:21:22.995853",
+    "processed_at": "2026-02-20T21:21:22.995857"
+  },
+  {
+    "id": 13438,
+    "type": "albums",
+    "slug": "kaveh-deylami-ft-golnoush-khaleghi-kaveh-deylami-collection",
+    "englishTitle": "Kaveh Deylami Collection",
+    "alternateTitle": "کالکشن کاوه دیلمی",
+    "imageUrl": "https://iroapp.ir/images/musics/2026/k/kaveh-deylami-ft-golnoush-khaleghi-kaveh-deylami-collection.jpg",
+    "country": "Iran",
+    "updatedAt": "1404/11/22",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Kaveh Deylami",
+        "slug": "kaveh-deylami",
+        "titleFarsi": "کاوه دیلمی",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/k/kaveh-deylami.jpg"
+      },
+      {
+        "title": "Golnoush Khaleghi",
+        "slug": "golnoush-khaleghi",
+        "titleFarsi": "گلنوش خالقی",
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Persian",
+        "slug": "persian",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "0",
+    "likes": "1",
+    "updateTime": "2026-02-11T17:33:37.336Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995876",
+    "updated_at": "2026-02-20T21:21:22.995880",
+    "processed_at": "2026-02-20T21:21:22.995884"
+  },
+  {
+    "id": 13437,
+    "type": "albums",
+    "slug": "various-artists-punk-essentials",
+    "englishTitle": "Punk Essentials",
+    "alternateTitle": "Punk Essentials",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-punk-essentials.jpg",
+    "country": "",
+    "updatedAt": "1404/9/21",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Punk",
+        "slug": "punk",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "59",
+    "likes": "3",
+    "updateTime": "2025-12-12T21:50:08.061Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995902",
+    "updated_at": "2026-02-20T21:21:22.995906",
+    "processed_at": "2026-02-20T21:21:22.995910"
+  },
+  {
+    "id": 13436,
+    "type": "albums",
+    "slug": "various-artists-persian-tar-collection",
+    "englishTitle": "Persian Tar Collection",
+    "alternateTitle": "کالکشن تک نوازی تار",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-persian-tar-collection.jpg",
+    "country": "",
+    "updatedAt": "1404/9/21",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Persian Classical",
+        "slug": "persian-classical",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Solo",
+        "slug": "solo",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "135",
+    "likes": "8",
+    "updateTime": "2025-12-12T16:05:18.181Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995926",
+    "updated_at": "2026-02-20T21:21:22.995930",
+    "processed_at": "2026-02-20T21:21:22.995934"
+  },
+  {
+    "id": 13435,
+    "type": "albums",
+    "slug": "various-artists-vladimir-horowitz-essentials",
+    "englishTitle": "Vladimir Horowitz Essentials",
+    "alternateTitle": "Vladimir Horowitz Essentials",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-vladimir-horowitz-essentials.jpg",
+    "country": "",
+    "updatedAt": "1404/9/21",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Classical",
+        "slug": "classical",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "58",
+    "likes": "3",
+    "updateTime": "2025-12-12T10:05:17.697Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995948",
+    "updated_at": "2026-02-20T21:21:22.995969",
+    "processed_at": "2026-02-20T21:21:22.995974"
+  },
+  {
+    "id": 13434,
+    "type": "albums",
+    "slug": "sleep-token-even-in-arcadia",
+    "englishTitle": "Even In Arcadia",
+    "alternateTitle": "Even In Arcadia",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/s/sleep-token-even-in-arcadia.jpg",
+    "country": "",
+    "updatedAt": "1404/9/20",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Sleep Token",
+        "slug": "sleep-token",
+        "titleFarsi": null,
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Metal",
+        "slug": "metal",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Progressive Metal",
+        "slug": "progressive-metal",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Alternative Metal",
+        "slug": "alternative-metal",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "57",
+    "likes": "2",
+    "updateTime": "2025-12-11T21:15:09.297Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.995989",
+    "updated_at": "2026-02-20T21:21:22.995993",
+    "processed_at": "2026-02-20T21:21:22.995997"
+  },
+  {
+    "id": 13433,
+    "type": "albums",
+    "slug": "saive-bloom",
+    "englishTitle": "Bloom",
+    "alternateTitle": "Bloom",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/s/saive-bloom.jpg",
+    "country": "",
+    "updatedAt": "1404/9/20",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Saive",
+        "slug": "saive",
+        "titleFarsi": null,
+        "imageUrl": ""
+      }
+    ],
+    "genres": [
+      {
+        "title": "Dance",
+        "slug": "dance",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Electronic",
+        "slug": "electronic",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "49",
+    "likes": "1",
+    "updateTime": "2025-12-11T19:45:13.924Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996012",
+    "updated_at": "2026-02-20T21:21:22.996016",
+    "processed_at": "2026-02-20T21:21:22.996020"
+  },
+  {
+    "id": 13432,
+    "type": "albums",
+    "slug": "mohammad-reza-shajarian-ft-mohammad-reza-shajarian-ft-parviz-meshkatian-best-of-shajarian",
+    "englishTitle": "Best Of Shajarian",
+    "alternateTitle": "بهترین‌های شجریان",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/m/mohammad-reza-shajarian-ft-mohammad-reza-shajarian-ft-parviz-meshkatian-best-of-shajarian.jpg",
+    "country": "",
+    "updatedAt": "1404/9/20",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Mohammad Reza Shajarian",
+        "slug": "mohammad-reza-shajarian",
+        "titleFarsi": "محمد رضا شجریان",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/m/mohammad-reza-shajarian.jpg"
+      },
+      {
+        "title": "Parviz Meshkatian",
+        "slug": "parviz-meshkatian",
+        "titleFarsi": "پرویز مشکاتیان",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/p/parviz-meshkatian.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Persian Classical",
+        "slug": "persian-classical",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Persian",
+        "slug": "persian",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "329",
+    "likes": "10",
+    "updateTime": "2025-12-11T16:15:19.276Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996034",
+    "updated_at": "2026-02-20T21:21:22.996038",
+    "processed_at": "2026-02-20T21:21:22.996042"
+  },
+  {
+    "id": 13431,
+    "type": "albums",
+    "slug": "various-artists-persian-chill-indie-vibes",
+    "englishTitle": "Persian Chill: Indie Vibes",
+    "alternateTitle": "چیل ایرانی: حال و هوای ایندی",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-persian-chill-indie-vibes.jpg",
+    "country": "",
+    "updatedAt": "1404/9/19",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Indie",
+        "slug": "indie",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "322",
+    "likes": "7",
+    "updateTime": "2025-12-10T17:55:17.657Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996063",
+    "updated_at": "2026-02-20T21:21:22.996068",
+    "processed_at": "2026-02-20T21:21:22.996072"
+  },
+  {
+    "id": 13430,
+    "type": "albums",
+    "slug": "various-artists-persian-hip-hop-mix",
+    "englishTitle": "Persian Hip Hop Mix",
+    "alternateTitle": "میکس هیپ هاپ ایرانی",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-persian-hip-hop-mix.jpg",
+    "country": "",
+    "updatedAt": "1404/9/19",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Hip Hop",
+        "slug": "hip-hop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "442",
+    "likes": "9",
+    "updateTime": "2025-12-10T00:10:18.997Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996087",
+    "updated_at": "2026-02-20T21:21:22.996091",
+    "processed_at": "2026-02-20T21:21:22.996094"
+  },
+  {
+    "id": 13429,
+    "type": "albums",
+    "slug": "various-artists-mood-booster",
+    "englishTitle": "Mood Booster",
+    "alternateTitle": "Mood Booster",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-mood-booster-nxtWOV.jpg",
+    "country": "",
+    "updatedAt": "1404/9/18",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Funk",
+        "slug": "funk",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Rap",
+        "slug": "rap",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Hip Hop",
+        "slug": "hip-hop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "130",
+    "likes": "1",
+    "updateTime": "2025-12-09T15:00:24.291Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996109",
+    "updated_at": "2026-02-20T21:21:22.996113",
+    "processed_at": "2026-02-20T21:21:22.996116"
+  },
+  {
+    "id": 13426,
+    "type": "albums",
+    "slug": "various-artists-songs-to-scream-in-the-car-f2ge2o",
+    "englishTitle": "Songs To Scream In The Car",
+    "alternateTitle": "Songs To Scream In The Car",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-songs-to-scream-in-the-car-f2ge2o.jpg",
+    "country": "",
+    "updatedAt": "1404/9/18",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Rock",
+        "slug": "rock",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Alternative",
+        "slug": "alternative",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "158",
+    "likes": "6",
+    "updateTime": "2025-12-09T07:58:21.911Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996131",
+    "updated_at": "2026-02-20T21:21:22.996135",
+    "processed_at": "2026-02-20T21:21:22.996139"
+  },
+  {
+    "id": 13425,
+    "type": "albums",
+    "slug": "various-artists-dance-party-09yife",
+    "englishTitle": "Dance Party",
+    "alternateTitle": "Dance Party",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-dance-party-09yife.jpg",
+    "country": "",
+    "updatedAt": "1404/9/17",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Dance",
+        "slug": "dance",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Rap",
+        "slug": "rap",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Party",
+        "slug": "party",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "180",
+    "likes": "1",
+    "updateTime": "2025-12-08T18:24:27.744Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996153",
+    "updated_at": "2026-02-20T21:21:22.996157",
+    "processed_at": "2026-02-20T21:21:22.996160"
+  },
+  {
+    "id": 13424,
+    "type": "albums",
+    "slug": "various-artists-rap-workout-yls4bi",
+    "englishTitle": "Rap Workout",
+    "alternateTitle": "Rap Workout",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/v/various-artists-rap-workout-yls4bi.jpg",
+    "country": "",
+    "updatedAt": "1404/9/15",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Various Artists",
+        "slug": "various-artists",
+        "titleFarsi": "various artists",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/v/various-artists.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Rap",
+        "slug": "rap",
+        "titleFarsi": null,
+        "imageUrl": null
+      },
+      {
+        "title": "Hiphop",
+        "slug": "hiphop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "315",
+    "likes": "6",
+    "updateTime": "2025-12-06T21:44:28.140Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996175",
+    "updated_at": "2026-02-20T21:21:22.996178",
+    "processed_at": "2026-02-20T21:21:22.996182"
+  },
+  {
+    "id": 13423,
+    "type": "albums",
+    "slug": "rastin-ba-to",
+    "englishTitle": "Ba To",
+    "alternateTitle": "با تو",
+    "imageUrl": "https://iroapp.ir/images/musics/2025/r/rastin-ba-to.jpg",
+    "country": "",
+    "updatedAt": "1404/9/14",
+    "isVideo": false,
+    "artists": [
+      {
+        "title": "Rastin",
+        "slug": "rastin",
+        "titleFarsi": "راستین",
+        "imageUrl": "https://iroapp.ir/images/musics/artists/r/rastin.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "title": "Pop",
+        "slug": "pop",
+        "titleFarsi": null,
+        "imageUrl": null
+      }
+    ],
+    "views": "326",
+    "likes": "5",
+    "updateTime": "2025-12-05T14:41:00.000Z",
+    "lyrics": null,
+    "created_at": "2026-02-20T21:21:22.996196",
+    "updated_at": "2026-02-20T21:21:22.996200",
+    "processed_at": "2026-02-20T21:21:22.996204"
+  }
+]

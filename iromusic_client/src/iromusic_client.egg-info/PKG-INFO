@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: iromusic_client
 Version: 1.0.0
 Summary: Python client for iromusicapp.ir API
-Home-page: https://github.com/example/iromusic_client
+Home-page: https://github.com/qcomputer/iromusic_client
 Author: iromusic_client
 Author-email: dissonancee@gmail.com
 Project-URL: Bug Reports, https://github.com/example/iromusic_client/issues
