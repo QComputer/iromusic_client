@@ -1,0 +1,20 @@
+{
+  "include": [
+    ".",
+    "iromusic_client"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/node_modules",
+    "**/build",
+    "**/dist"
+  ],
+  "pythonVersion": "3.14",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "extraPaths": [
+    "iromusic_client/src",
+    "."
+  ]
+}
